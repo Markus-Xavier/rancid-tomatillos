@@ -4,10 +4,10 @@ import './Card.css';
 const Card = ({poster, title, releaseDate, id, rating}) => {
   return (
     <div>
-      <img src={poster}>
+      <img src={poster} alt='movie poster'/>
       <p>{title}</p>
-      <p>{releaseDate}</p>
-      <p>{rating}</p>
+      <p>Release Date: {releaseDate}</p>
+      <p>User Rating: {rating.toPrecision(2)}/10</p>
     </div>
   )
 }
