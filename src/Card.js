@@ -9,7 +9,7 @@ const Card = ({poster, title, releaseDate, id, rating}) => {
       <p>Release Date: {releaseDate}</p>
       <p>User Rating: {rating.toPrecision(2)}/10</p>
     </div>
-  )
-}
+  );
+};
 
 export default Card;

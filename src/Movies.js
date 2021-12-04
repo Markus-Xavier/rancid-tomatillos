@@ -3,7 +3,6 @@ import Card from './Card';
 import './Movies.css';
 
 const Movies = ({movies}) => {
-  // console.log('here',movies)
   const movieBox = movies.map(movie => {
     return (
       <Card
@@ -14,14 +13,14 @@ const Movies = ({movies}) => {
         key={movie.id}
         rating={movie.average_rating}
       />
-    )
-  })
+    );
+  });
 
   return (
     <section className='movies-container'>
       {movieBox}
     </section>
-  )
-}
+  );
+};
 
 export default Movies;
