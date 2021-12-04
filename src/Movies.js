@@ -2,7 +2,7 @@ import React from 'react';
 import Card from './Card';
 import './Movies.css';
 
-const Movies = ({movies}) => {
+const Movies = ({movies, showSingleMovie}) => {
   const movieBox = movies.map(movie => {
     return (
       <Card
@@ -12,6 +12,7 @@ const Movies = ({movies}) => {
         id={movie.id}
         key={movie.id}
         rating={movie.average_rating}
+        showSingleMovie={showSingleMovie}
       />
     );
   });
