@@ -25,12 +25,17 @@ class App extends Component {
     this.setState({movies: filteredMovie, singleMovie: true});
   }
 
+  returnHome = () => {
+    this.setState({singleMovie: false});
+    this.componentDidMount();
+  }
+
   render() {
     return (
       <main className='App'>
         <h1>Rancid Tomatillos</h1>
         {this.state.error && <h2>{this.state.error}</h2>}
-        {this.state.singleMovie ? <SingleMovie id={this.state.movies[0].id}/> 
+        {this.state.singleMovie ? <SingleMovie id={this.state.movies[0].id} returnHome={this.returnHome}/> 
         : <Movies movies={this.state.movies} showSingleMovie={this.showSingleMovie}/>}
       </main>
     );

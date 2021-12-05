@@ -39,6 +39,7 @@ class SingleMovie extends Component {
           <p>{movie.overview}</p>
           <ul>GENRE: {this.displayGenre()}</ul>
         </div>
+        <button onClick={this.props.returnHome}>Go Back</button>
       </section>
     )
   }
