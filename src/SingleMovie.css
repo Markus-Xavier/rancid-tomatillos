@@ -1,0 +1,27 @@
+.movie-display {
+  display: flex;
+}
+
+.movie-backdrop {
+  position: absolute;
+  max-height: 100vh;
+  min-width: 100vw;
+  z-index: -1;
+  opacity: .3;
+}
+
+.movie-poster {
+  z-index: 1;
+  width: 358px;
+  height: 548px;
+}
+
+.movie-info {
+  z-index: 1;
+}
+
+.movie-backdrop img {
+  max-height: 100%;
+  width: 100%;
+}
+

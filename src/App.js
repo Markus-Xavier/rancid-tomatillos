@@ -21,7 +21,6 @@ class App extends Component {
   };
 
   showSingleMovie = (id) => {
-    console.log(id);
     const filteredMovie = this.state.movies.filter(movie => movie.id === id);
     this.setState({movies: filteredMovie, singleMovie: true});
   }
@@ -31,8 +30,8 @@ class App extends Component {
       <main className='App'>
         <h1>Rancid Tomatillos</h1>
         {this.state.error && <h2>{this.state.error}</h2>}
-        {this.state.singleMovie && <SingleMovie movie={this.state.movies}/>}
-        <Movies movies={this.state.movies} showSingleMovie={this.showSingleMovie}/>
+        {this.state.singleMovie ? <SingleMovie id={this.state.movies[0].id}/> 
+        : <Movies movies={this.state.movies} showSingleMovie={this.showSingleMovie}/>}
       </main>
     );
   };
