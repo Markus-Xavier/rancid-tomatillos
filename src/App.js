@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Movies from './Movies';
+import SingleMovie from './SingleMovie';
 import './App.css';
 
 class App extends Component {
@@ -7,6 +8,8 @@ class App extends Component {
     super();
     this.state = {
       movies: [],
+      singleMovie: false,
+      error: '',
     }
   };
 
@@ -14,14 +17,26 @@ class App extends Component {
     return fetch('https://rancid-tomatillos.herokuapp.com/api/v2/movies')
       .then(response => response.json())
       .then(data => this.setState({movies: data.movies}))
-      .catch(err => console.log(err));
+      .catch(error => this.setState({error: error}));
   };
+
+  showSingleMovie = (id) => {
+    const filteredMovie = this.state.movies.filter(movie => movie.id === id);
+    this.setState({movies: filteredMovie, singleMovie: true});
+  }
+
+  returnHome = () => {
+    this.setState({singleMovie: false});
+    this.componentDidMount();
+  }
 
   render() {
     return (
       <main className='App'>
         <h1>Rancid Tomatillos</h1>
-        <Movies movies={this.state.movies} />
+        {this.state.error && <h2>{this.state.error}</h2>}
+        {this.state.singleMovie ? <SingleMovie id={this.state.movies[0].id} returnHome={this.returnHome}/> 
+        : <Movies movies={this.state.movies} showSingleMovie={this.showSingleMovie}/>}
       </main>
     );
   };
