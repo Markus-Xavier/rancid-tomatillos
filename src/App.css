@@ -11,3 +11,7 @@ h1 {
   margin: 0px;
   text-indent: 65px;
 }
+
+body {
+  max-height: 100vh;
+}
