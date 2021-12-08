@@ -38,7 +38,7 @@ class App extends Component {
         <h1>Rancid Tomatillos</h1>
         <Routes>
           <Route exact path='/' element={<Movies movies={this.state.movies}/>}/>
-          <Route path='/:id' element={<URLParams component={<SingleMovie />}/>}/>
+          <Route path='/:id' element={<URLParams/>}/>
         </Routes>
       </main>
     );
