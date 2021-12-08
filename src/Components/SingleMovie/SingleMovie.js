@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import './SingleMovie.css';
 
 class SingleMovie extends Component {
@@ -7,6 +7,7 @@ class SingleMovie extends Component {
     this.state = {
       movie: '',
     }
+    console.log('I am a dog');
   }
 
   componentDidMount = () => {
