@@ -1,18 +1,21 @@
 .all-movie-posters {
+  padding-top: 8px;
   width: 131px;
   height: 225px;
   cursor: pointer;
-}
-
-.all-movie-posters:hover {
-  transition: .5s;
-  transform: scale(1.1);
 }
 
 .movie {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 10px;
+  background-color: rgba(237, 237, 217, 0.959);
+}
+
+.movie:hover {
+  transition: .5s;
+  transform: scale(1.1);
 }
 
 p {
@@ -20,11 +23,15 @@ p {
 }
 
 .title {
-  padding-top: 8px;
+  padding: 8px;
   font-size: 22px;
   font-weight: bold;
 }
 
 .release, .rating {
   font-size: 12px;
+}
+
+.rating {
+  padding-bottom: 4px;
 }

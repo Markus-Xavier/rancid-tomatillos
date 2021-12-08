@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './SingleMovie.css';
+
 class SingleMovie extends Component {
   constructor(props) {
     super(props)
