@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import Movies from './Movies';
-import SingleMovie from './SingleMovie';
+import { Routes, Route } from 'react-router-dom';
+import Movies from '../Movies/Movies';
+import SingleMovie from '../SingleMovie/SingleMovie';
+import URLParams from '../URLParams/URLParams';
 import './App.css';
 
 class App extends Component {
@@ -34,9 +36,10 @@ class App extends Component {
     return (
       <main className='App'>
         <h1>Rancid Tomatillos</h1>
-        {this.state.error && <h2>{this.state.error}</h2>}
-        {this.state.singleMovie ? <SingleMovie id={this.state.movies[0].id} returnHome={this.returnHome}/> 
-        : <Movies movies={this.state.movies} showSingleMovie={this.showSingleMovie}/>}
+        <Routes>
+          <Route exact path='/' element={<Movies movies={this.state.movies}/>}/>
+          <Route path='/:id' element={<URLParams/>}/>
+        </Routes>
       </main>
     );
   };

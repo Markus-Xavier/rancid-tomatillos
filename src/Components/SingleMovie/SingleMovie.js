@@ -1,5 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import './SingleMovie.css';
+import { Link } from 'react-router-dom';
 
 class SingleMovie extends Component {
   constructor(props) {
@@ -33,7 +34,9 @@ class SingleMovie extends Component {
         </div>
         <div className='movie-content'>
           <div className='back-button'>
-            <button onClick={this.props.returnHome}>Go Back</button>
+            <Link to='/'>
+              <button>Go Back</button>
+            </Link>
           </div>
           <img className='movie-poster' src={movie.poster_path} alt={`${movie.title} Poster`}/>
           <div className='movie-info'>
