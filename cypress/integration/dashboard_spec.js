@@ -45,6 +45,9 @@ describe('Use of dashboard', () => {
       .get('.title')
       .contains('Money Plane')
       .click();
+    
+    cy.url()
+      .should('include', '/694919')
   });
 
   it('Should be able to click on a different movie and move to that movie\'s details', () => {
@@ -52,6 +55,9 @@ describe('Use of dashboard', () => {
       .get('.title')
       .contains('Rogue')
       .click();
+
+    cy.url()
+      .should('include', '/718444')
   });
 
   it('Should return the home dashboard when the "Go Back" button is clicked', () => {
@@ -64,5 +70,14 @@ describe('Use of dashboard', () => {
 
     cy.get('h1')
       .contains('Rancid Tomatillos')
+  })
+
+  it('Should go to proper movie details if specific id is given in URL', () => {
+    cy.visit('http://localhost:3000/337401')
+      .get('.movie-display')
+      .get('.movie-content')
+      .get('.movie-info')
+      .get('h2')
+      .contains('Mulan');
   })
 });
