@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './MovieSearch.css';
 
 class MovieSearch extends Component {
   constructor(props) {
@@ -13,8 +14,8 @@ class MovieSearch extends Component {
 
   render() {
     return (
-        <form>
-          <input type='text' value={this.state.value} onChange={this.handleChange} placeholder='Search' />
+        <form className='form-flex'>
+          <input className='search-input' type='text' value={this.state.value} onChange={this.handleChange} placeholder='Search' />
         </form>
     )
   }

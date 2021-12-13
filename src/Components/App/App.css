@@ -6,12 +6,19 @@ h1 {
   display: flex;
   align-items: center;
   margin-top: 0px;
-  padding: 7px;
-  background-color: #717578;
   margin: 0px;
-  text-indent: 65px;
+  flex-grow: 0.4;
 }
 
 body {
   max-height: 100vh;
+}
+
+header{
+  display: flex;
+  justify-content: flex-end;
+  background-color: #717578;
+  padding: 7px;
+  padding-left: 75px;
+  padding-right: 75px;
 }

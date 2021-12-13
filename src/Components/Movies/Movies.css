@@ -4,4 +4,5 @@
   grid-gap: 50px;
   padding: 75px;
   background-color: #a3a9ad;
+  min-height: 100vh;
 }
