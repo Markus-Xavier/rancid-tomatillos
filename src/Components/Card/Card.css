@@ -11,6 +11,7 @@
   align-items: center;
   border-radius: 10px;
   background-color: rgba(237, 237, 217, 0.959);
+  height: 309px;
 }
 
 .movie:hover {
@@ -26,6 +27,7 @@ p {
   padding: 8px;
   font-size: 22px;
   font-weight: bold;
+  text-align: center;
 }
 
 .release, .rating {
