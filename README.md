@@ -27,6 +27,10 @@ Rancid Tomatillos is a web app that will display the posters, title, and rating 
 
 ## Illustrations
 
+Live Search 
+![rancid-livesearch](https://user-images.githubusercontent.com/48008726/145904268-807f43a9-f2c2-408c-bb2f-4471fd4b92a6.gif)
+
+
 ## Install
 
 -  Clone down this [repo](https://github.com/Markus-Xavier/rancid-tomatillos) to your machine
