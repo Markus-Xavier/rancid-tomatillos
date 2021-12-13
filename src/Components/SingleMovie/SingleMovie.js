@@ -41,10 +41,10 @@ class SingleMovie extends Component {
           <img className='movie-poster' src={movie.poster_path} alt={`${movie.title} Poster`}/>
           <div className='movie-info'>
             <h2>{movie.title}</h2>
-            <p>{movie.release_date}</p>
-            <p>{movie.runtime}</p>
+            <p>Release Date: {movie.release_date}</p>
+            <p>Runtime: {movie.runtime} min</p>
             <p>{movie.overview}</p>
-            <ul>GENRE <div className='genres'>{this.displayGenre()}</div></ul>
+            <ul>GENRE: <div className='genres'>{this.displayGenre()}</div></ul>
           </div>
         </div>
       </section>

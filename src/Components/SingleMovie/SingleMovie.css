@@ -20,6 +20,10 @@
 
 .movie-info {
   z-index: 1;
+  background-color: rgba(237, 237, 217, 0.959);
+  border-radius: 10px;
+  padding-left: 8px;
+  height: fit-content;
 }
 
 .movie-backdrop img {
@@ -43,10 +47,21 @@
 .genres li{
   margin-right: 8px;
 }
+
 ul{
   padding: 0px;
 }
 
 .back-button {
   padding-left: 127px;
+  padding-right: 16px;
+}
+
+button {
+  background-color: black;
+  color: white;
+}
+
+p {
+  padding-bottom: 8px;
 }
