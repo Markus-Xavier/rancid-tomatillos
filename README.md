@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Rancid Tomatillos
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Mod3 2108 Paired Project
 
-## Available Scripts
+## Table of Contents
+- [Abstract](#Abstract)
+- [Technologies](#Technologies)
+- [Illustrations](#Illustrations)
+- [Install](#Install)
+- [Wins](#Wins)
+- [Challenges](#Challenges)
+- [Additions](#Additions)
+- [Contributors](#Contributors)
+- [Specs](#Specs)
 
-In the project directory, you can run:
+## Abstract
+Rancid Tomatillos is a web app that will display the posters, title, and rating of a database of movies to a user. The user can then click on any of the posters to see additional details about that movie. There is also search bar for users to search to see if their favorite movie is included.
 
-### `npm start`
+## Technologies
+-  HTML
+-  CSS
+-  JavaScript
+-  fetch API
+-  React
+-  Router
+-  Cypress
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Illustrations
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Live Search 
+![rancid-livesearch](https://user-images.githubusercontent.com/48008726/145904268-807f43a9-f2c2-408c-bb2f-4471fd4b92a6.gif)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Install
 
-### `npm run build`
+-  Clone down this [repo](https://github.com/Markus-Xavier/rancid-tomatillos) to your machine
+-  cd into the directory `rancid-tomatillos`
+-  Run `npm install` in the terminal
+-  Run `npm start` in the terminal
+-  In the browser go to `http://localhost:3000/`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Wins
+- Built a whole app using React and Router
+- Implimented a live search feature to filter movies
+- We feel like we used React features to their fullest ability.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Challenges
+- Refactoring our app to use Routes caused some weird behaviors we had to adjust to
+- Implimenting cypress testing took some time to get working properly
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Additions
+### Future Iterations
+- Ability to add movies
+- Allow user to favorite movies
+- Add a bigger database of movies
 
-### `npm run eject`
+## Contributors
+- [Brian Peterson](https://github.com/bpeterson2579)
+- [Markus Rossio](https://github.com/Markus-Xavier)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Specs
+Project specs can be found here
+- [Rancid Tomatillos](https://frontend.turing.edu/projects/module-3/rancid-tomatillos-v3.html)

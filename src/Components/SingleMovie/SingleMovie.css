@@ -1,0 +1,67 @@
+.movie-display {
+  display: flex;
+  max-height: 100%;
+}
+
+.movie-backdrop {
+  position: absolute;
+  max-height: 100%;
+  min-width: 100%;
+  z-index: -1;
+  opacity: .3;
+}
+
+.movie-poster {
+  z-index: 1;
+  width: 358px;
+  height: 548px;
+  margin-right: 28px;
+}
+
+.movie-info {
+  z-index: 1;
+  background-color: rgba(237, 237, 217, 0.959);
+  border-radius: 10px;
+  padding-left: 8px;
+  height: fit-content;
+}
+
+.movie-backdrop img {
+  max-height: 100%;
+  width: 100%;
+}
+
+.movie-content {
+  padding-left: 127px;
+  padding-right: 127px;
+  padding-top: 64px;
+  display: flex;
+}
+
+.genres{
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.genres li{
+  margin-right: 8px;
+}
+
+ul{
+  padding: 0px;
+}
+
+.back-button {
+  padding-left: 127px;
+  padding-right: 16px;
+}
+
+button {
+  background-color: black;
+  color: white;
+}
+
+p {
+  padding-bottom: 8px;
+}

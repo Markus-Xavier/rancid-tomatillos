@@ -1,5 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import './SingleMovie.css';
+import { Link } from 'react-router-dom';
+
 class SingleMovie extends Component {
   constructor(props) {
     super(props)
@@ -18,7 +20,7 @@ class SingleMovie extends Component {
   displayGenre = () => {
     if(this.state.movie.genres) {
       return this.state.movie.genres.map((genre, index) => {
-        return <li key={index}>{genre}</li>
+          return <li key={index}>{genre}, </li>
       })
     }
   }
@@ -30,16 +32,21 @@ class SingleMovie extends Component {
         <div className='movie-backdrop'>
           <img src={movie.backdrop_path} alt={`${movie.title} Backdrop`}/>
         </div>
-
-        <img className='movie-poster' src={movie.poster_path} alt={`${movie.title} Poster`}/>
-        <div className='movie-info'>
-          <h2>{movie.title}</h2>
-          <p>{movie.release_date}</p>
-          <p>{movie.runtime}</p>
-          <p>{movie.overview}</p>
-          <ul>GENRE: {this.displayGenre()}</ul>
+        <div className='movie-content'>
+          <div className='back-button'>
+            <Link to='/'>
+              <button>Go Back</button>
+            </Link>
+          </div>
+          <img className='movie-poster' src={movie.poster_path} alt={`${movie.title} Poster`}/>
+          <div className='movie-info'>
+            <h2>{movie.title}</h2>
+            <p>Release Date: {movie.release_date}</p>
+            <p>Runtime: {movie.runtime} min</p>
+            <p>{movie.overview}</p>
+            <ul>GENRE: <div className='genres'>{this.displayGenre()}</div></ul>
+          </div>
         </div>
-        <button onClick={this.props.returnHome}>Go Back</button>
       </section>
     )
   }

@@ -1,0 +1,11 @@
+.search-input {
+  width: 365px;
+  height: 27px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.form-flex {
+  align-self: center;
+  flex-grow: 0.6;
+}
